@@ -61,8 +61,8 @@
                 id: '1',
                title: 'Runners',
                category: 'STAR',
-               shortDescription: 'Designed and optimized structural runners for subsystem routing and integration in the LE3 liquid engine system.',
-               longDescription: 'Designed structural “runner” components to route and protect wiring and propellant lines between tanks and subsystems, integrating them cleanly into the LE3 vehicle architecture while preserving symmetry and mass balance. The runner geometry was sized using first-principles hand calculations alongside a custom Python optimization tool to account for impact loads and flight-induced vibration, with assumptions validated against SolidWorks FEA and iteratively refined until analytical and simulation results converged. The final designs were engineered for manufacturability and assembly, incorporating geometric constraints, minimum feature sizes, and clear load paths compatible with waterjet and CNC fabrication, enabling straightforward integration into the LE3 liquid engine system.',
+               shortDescription: 'Designed structural runners for routing fuel lines and wiring.',
+               longDescription: 'I worked on the design of structural runners used to route and support fuel lines and wiring between different tanks and components of the LE3 liquid engine rocket. The runners had to survive the impact of the rocket hitting the ground at roughly 10 m/s while fitting within strict geometric constraints imposed by the airframe and propulsion layout, as well as manufacturing limits of a sheet metal brake. Using what I learned in my statics class, I calculated impact forces and stresses to size the structure, then wrote custom Python code to optimize the geometry within those constraints. I also analyzed vibration behavior and redesigned the support spacing to push destructive modes above 1000 Hz, resulting in a design that integrated cleanly with the LE3 airframe and propulsion system.',
                imageUrl: './public/runners.png',
                pdfUrl: './public/runners.pdf',
                tags: ['Solidworks', 'FEA', 'Python', 'Manufacturing'],
@@ -73,8 +73,8 @@
                 id: '2',
                 title: 'STAR Intro Project',
                 category: 'STAR',
-                shortDescription: 'Contributed to the end-to-end design, fabrication, and launch of a solid-propulsion rocket, from CAD modeling through flight operations.',
-                longDescription: 'Collaborated in a six-person team to design, build, and launch a solid-propulsion rocket as part of STAR’s introductory project, successfully reaching an altitude of approximately 4,000 ft. Modeled the complete rocket assembly in Onshape to establish structural layout, mass distribution, and subsystem integration prior to fabrication. Led hands-on manufacturing and system integration efforts, including composite structures and avionics installation, translating CAD designs into a fully flight-ready vehicle.',
+                shortDescription: 'Designed and launched a solid motor rocket reaching 4,000 feet.',
+                longDescription: 'For the STAR Intro Project, I worked with a team of 6 on the end-to-end design and construction of a solid motor rocket built within a single semester. I CADed the rocket in Onshape, designed the airframe and internal layout, and assembled the structure using fiberglass tubes and custom components. I also helped assemble and solder avionics hardware, integrating recovery electronics into the vehicle. The rocket was successfully launched and reached an altitude of approximately 4,000 feet, validating the full design, build, and integration process.',
                 imageUrl: './public/STAR.png',
                 pdfUrl: './public/STAR.pdf',
                 tags: ['OnShape', 'Manufacturing', 'Electronics'],
@@ -84,8 +84,8 @@
                 id: '3',
                 title: 'Wind Tower Project',
                 category: 'Class Projects',
-                shortDescription: 'Designed, analyzed, and experimentally validated a model wind tower under tight mass and volume constraints.',
-                longDescription: 'Collaborated in a five-person team to design and validate a model wind tower under strict volume and mass constraints, informed by research into existing turbine and tower architectures. Modeled the complete structural assembly in SolidWorks and performed finite element analysis to guide geometry refinement, material selection, and stiffness optimization prior to fabrication. Experimentally tested the final prototype, achieving a measured structural stiffness of 3.55 N/mm and an electrical power output of 0.5 W, and compared experimental results against analytical calculations and simulation predictions.',
+                shortDescription: 'Designed and validated a model wind tower through FEA and experimental testing.',
+                longDescription: 'I worked with a five-person team to design and validate a model wind tower under strict volume and mass constraints, starting with research into existing turbine and tower designs to shape our approach. I modeled the full structural assembly in SolidWorks and used finite element analysis to refine the geometry, select materials, and tune stiffness before fabrication. The final prototype was then experimentally tested, achieving a measured structural stiffness of 3.55 N/mm and an electrical power output of 0.5 W, and these results were compared directly against analytical calculations and simulation predictions.',
                 imageUrl: './public/windtower.png',
                 pdfUrl: './public/windtower.pdf',
                 tags: ['Soldiworks', 'FEA', '3D Printing', 'Testing'],
@@ -95,11 +95,22 @@
                 id: '4',
                 title: 'ExtenDesk',
                 category: 'High School',
-                shortDescription: 'Served as mechanical design lead for a desk-mounted product, driving CAD, DFM, and hands-on prototyping.',
-                longDescription: 'Served as the mechanical design lead for a desk-mounted attachment developed at a startup that placed first in a national competition. Designed and detailed the complete assembly in SolidWorks, applying appropriate tolerances, fits, and design-for-manufacturing principles to ensure reliable assembly and repeatable production. Led hands-on manufacturing and prototyping efforts using woodworking, 3D printing, and iterative fabrication methods, gaining practical experience with material selection, finishing processes, and real-world production constraints.',
+                shortDescription: 'Prototyped and manufactured a desk attachment with CAD and fabrication.',
+                longDescription: 'I led the mechanical design of a multifunctional portable desk attachment developed as part of an early-stage startup project. The process began with understanding user needs and researching existing products for inspiration, followed by CAD modeling, tolerance considerations, and physical prototyping. Through iterative fabrication and testing, the design was refined into a functional prototype that helped the team place first at INJAZ Egypt.',
                 imageUrl: './public/extendesk.png',
                 pdfUrl: './public/extendesk.pdf',
                 tags: ['Fusion360', 'DFM', 'Product Design'],
+                date: 'Spring 2024'
+            },
+            {
+                id: '5',
+                title: 'DT IA',
+                category: 'High School',
+                shortDescription: 'Designed and CNC-manufactured a wall-mounted shower shelf.',
+                longDescription: 'For my Design Technology Internal Assessment, I completed the full product development of a wall-mounted shower shelving system, from user research through manufacturing. I began by interviewing my clients—my mom and brother—to understand their specific storage needs, then conducted market research on existing products to gather inspiration and identify design gaps. I designed the shelves in Fusion 360, iterated on the geometry for usability and manufacturability, and CNC-machined the components from wood before assembling, finishing, and waterproofing them for real use. The project followed a complete development cycle, including user needs analysis, prototyping, testing, and fabrication, resulting in a functional and aesthetically integrated product.',
+                imageUrl: './public/shelf.png',
+                pdfUrl: './public/shelf.pdf',
+                tags: ['Fusion360', 'Manufacturing', 'Product Design', 'CNC'],
                 date: 'Spring 2024'
             }
         ];
@@ -231,7 +242,7 @@
                                     I'm <span className="text-[#003262]">Marwan</span>.
                                 </h1>
                                 <p className="text-xl md:text-3xl text-slate-500 leading-relaxed font-light mb-16 max-w-xl mx-auto lg:mx-0">
-                                    I'm a Mechanical Engineering student at UC Berkeley. I'm passionate about using engineering to solve complex real world problems. I'm a member of STAR (Space Technologies and Rocketry) as part of the Airframe Team.
+                                    I’m a mechanical engineering student at UC Berkeley who likes applying what I learn in class to real-world projects. I enjoy working on big, complex systems where different constraints conflict and tradeoffs have to be made. When I'm not busy CADing or building rockets, I like playing volleyball with friends, exploring the Bay Area, and cooking.
                                 </p>
                                 <div className="grid grid-cols-2 md:grid-cols-3 gap-10 pt-8 border-t border-slate-100">
                                     <div className="flex flex-col gap-1">
